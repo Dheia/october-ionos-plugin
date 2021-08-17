@@ -27,6 +27,19 @@ that you MAY need to add `-cli` after the version number depending on your setup
 MAY aborts if the non-CLI / CGI version is used.
 
 
+Locate Composer File
+--------------------
+
+The Composer file should be located in the root directory of your OctoberCMS website, which may 
+already is. If not, you can download and install composer by executing the following commands, while 
+you're in the root path of your OctoberCMS website:
+
+```
+> wget https://getcomposer.org/installer installer
+> php7.4-cli installer --filename composer
+``` 
+
+
 Copyright & License
 -------------------
 
