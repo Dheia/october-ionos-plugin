@@ -72,7 +72,7 @@ class IonosUpdate extends Command
         passthru("$phpv artisan october:mirror --composer");
 
         // Migrate database
-        $this->comment("Executing: php artisan october:migrate");
+        $this->comment("Executing: $phpv artisan october:migrate");
         $this->output->newLine();
 
         $errCode = null;

@@ -1,2 +1,5 @@
 1.0.0:
     - Version 1.0.0 - Initial Release
+1.0.1:
+    - 'Version 1.0.1 - Small Fix (Check CHANGELOG.md for details)'
+    - 'Update: Missing on $phpv on the comment method.'
