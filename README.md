@@ -22,10 +22,9 @@ PHP itself calls his own command.
 
 The new provided `ionos:update` uses `php7.4-cli` instead of `php`, but allows you to change this 
 default by adding the option `--phpv=[PHP_ENV]`. When, for whatever reason, your PHP environment 
-command does not start with `php`, you can skip this check with `--skip-nophp` as well. 
-
-Keep in mind that you MAY need to add `-cli` after the version number, since the update MAY aborts 
-on the non-CLI / CGI version.
+command does not start with `php`, you can skip this check with `--skip-nophp` as well. Keep in mind 
+that you MAY need to add `-cli` after the version number depending on your setup, since the update 
+MAY aborts if the non-CLI / CGI version is used.
 
 
 Copyright & License
