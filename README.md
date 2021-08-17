@@ -15,14 +15,17 @@ What's the difference to october:update?
 
 The `october:update` command pass `php ...` to the `passthru` PHP function, which is completely 
 cool on almost all environments and hosting provider in the world wide web. However, some providers, 
-which offers an SSH access to their packages, support multiple PHP versions side-by-side and may 
-use a deprecated version for the standard `php` command. For example: IONOS uses version 4.4.9 on 
-the default `php` command, which can easily be changed when using SSH, but not when PHP itself calls 
-these using one of the available PHP functions.
+which offers an SSH access to their webhosting packages, support multiple PHP versions side-by-side 
+and a few of them use a deprecated version for the standard `php` command. For example: IONOS uses 
+version 4.4.9 on the default `php` command, which can easily be changed when using SSH, but not when 
+PHP itself calls his own command.
 
-The new added `ionos:update` uses `php7.4-cli` instead of `php`, but allows you to change this 
+The new provided `ionos:update` uses `php7.4-cli` instead of `php`, but allows you to change this 
 default by adding the option `--phpv=[PHP_ENV]`. When, for whatever reason, your PHP environment 
 command does not start with `php`, you can skip this check with `--skip-nophp` as well. 
+
+Keep in mind that you MAY need to add `-cli` after the version number, since the update MAY aborts 
+on the non-CLI / CGI version.
 
 
 Copyright & License
