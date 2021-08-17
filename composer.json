@@ -1,0 +1,25 @@
+{
+    "name": "synder/ionos-plugin",
+    "type": "october-plugin",
+    "description": "Simple Updater for your OctoberCMS website, designed for IONOS Webhosting packages.",
+    "homepage": "https://octobercms.com/plugin/synder-ionos",
+    "keywords": [
+        "october", 
+        "october-plugin", 
+        "update",
+        "ionos",
+        "synder"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Synder",
+            "email": "october@synder.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "composer/installers": "~1.0"
+    }
+}
